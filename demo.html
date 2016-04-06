@@ -2,100 +2,226 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Demo Layout</title>
+		<title>Flute Demo</title>
 
-		<link href="css/reset.css"
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible"
+			content="IE=edge">
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1">
+		<title>Check-In</title>
+		<link href="css/reset.css" 
+			rel="stylesheet"
+			type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic"
+			rel="stylesheet"
+			type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic"
+			rel="stylesheet"
+			type="text/css">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
 			rel="stylesheet"
 			type="text/css">
 		<link href="css/flute.css"
 			rel="stylesheet"
 			type="text/css">
-		</style>
 	</head>
 
 	<body>
-		<div class="label">A simple example: one row, one column:</div>
-		<div class="rows">
-			<div class="row">
-				<div class="col-12">
-					<span>col-12</span>
+		<form class="form">
+			<div class="box">
+				<div class="box-header">
+					Input Boxes
 				</div>
-			</div>
-		</div>
-
-		<div class="label">2 rows, multiple columns. No column stacking (yet!)</div>
-		<div class="rows">
-			<div class="row">
-				<div class="col-6">
-					<span>col-6</span>
-				</div>
-				<div class="col-4">
-					<span>col-4</span>
-				</div>
-				<div class="col-2">
-					<span>col-2</span>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-6">
-					<span>col-6</span>
-				</div>
-				<div class="col-6">
-					<span>col-6</span>
-				</div>
-			</div>
-		</div>
-
-		<div class="label">1 row, more than 12 column parts:</div>
-		<div class="rows">
-			<div class="row">
-				<div class="col-6">
-					<span>col-6</span>
-				</div>
-				<div class="col-6">
-					<span>col-6</span>
-				</div>
-				<div class="col-6">
-					<span>col-6</span>
-				</div>
-				<div class="col-6">
-					<span>col-6</span>
-				</div>
-			</div>
-		</div>
-
-		<div class="label">Nested rows within columns:</div>
-		<div class="rows">
-			<div class="row">
-				<div class="col-6">
+				<div class="box-item">
 					<div class="row">
 						<div class="col-6">
-							<span>col-6</span>
+							<input type="text" class="input" value="sdkjhadkjhs askdjhaks jdh" />
 						</div>
 						<div class="col-6">
-							<span>col-6</span>
+							<input type="password" class="input" value="password" />
 						</div>
 					</div>
 				</div>
-				<div class="col-6">
-					<span>col-6</span>
+				<div class="box-item">
+					<div class="row">
+						<div class="col-3">
+							<input type="text" class="input error" value="Error" />
+						</div>
+						<div class="col-3">
+							<input type="text" class="input warning" value="Warning" />
+						</div>
+						<div class="col-3">
+							<input type="text" class="input success" value="Success" />
+						</div>
+						<div class="col-3">
+							<input type="text" class="input notice" value="Notice" />
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-3">
+							<input type="text" class="input error" value="Disabled" disabled />
+						</div>
+						<div class="col-3">
+							<input type="text" class="input warning" value="Disabled" disabled />
+						</div>
+						<div class="col-3">
+							<input type="text" class="input success" value="Disabled" disabled />
+						</div>
+						<div class="col-3">
+							<input type="text" class="input notice" value="Disabled" disabled />
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
+		</form>
 
-		<div class="label">Column offsets:</div>
-		<div class="rows">
-			<div class="row">
-				<div class="col-5 offset-7">
-					<span>col-5 offset-7</span>
+		<form class="form">
+			<div class="box">
+				<div class="box-header">
+					Textareas
 				</div>
-				<div class="col-6 offset-3">
-					<span>col-6 offset-3</span>
+				<div class="box-item">
+					<div class="row">
+						<div class="col-12">
+							<textarea class="input" rows="3">Cow laborum est cillum pariatur. Tongue adipisicing dolor bresaola excepteur commodo, incididunt cupim nulla. Ipsum dolore incididunt ham, alcatra corned beef shank ground round cupidatat laboris mollit anim. Short ribs beef non, ground round pastrami in salami turkey adipisicing ribeye.</textarea>
+						</div>
+					</div>
 				</div>
-				<div class="col-3">
-					<span>col-3</span>
+				<div class="box-item">
+					<div class="row">
+						<div class="col-3">
+							<textarea class="input error" rows="3">Cow laborum est cillum pariatur.</textarea>
+						</div>
+						<div class="col-3">
+							<textarea class="input warning" rows="3">Cow laborum est cillum pariatur.</textarea>
+						</div>
+						<div class="col-3">
+							<textarea class="input success" rows="3">Cow laborum est cillum pariatur.</textarea>
+						</div>
+						<div class="col-3">
+							<textarea class="input notice" rows="3">Cow laborum est cillum pariatur.</textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-3">
+							<textarea class="input error" rows="3" disabled>Cow laborum est cillum pariatur.</textarea>
+						</div>
+						<div class="col-3">
+							<textarea class="input warning" rows="3" disabled>Cow laborum est cillum pariatur.</textarea>
+						</div>
+						<div class="col-3">
+							<textarea class="input success" rows="3" disabled>Cow laborum est cillum pariatur.</textarea>
+						</div>
+						<div class="col-3">
+							<textarea class="input notice" rows="3" disabled>Cow laborum est cillum pariatur.</textarea>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
+		</form>
+		<form class="form">
+			<div class="box">
+				<div class="box-header">
+					Buttons
+				</div>
+				<div class="box-item">
+					<div class="row">
+						<div class="col-4">
+							<button class="dropdown">Select Options</button>
+						</div>
+						<div class="col-4">
+							<button type="button" class="button">Button 1</button>
+						</div>
+						<div class="col-4">
+							<button type="button" class="button"><span class="fa fa-butt-upload"></span>&nbsp;</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-4">
+							<button class="dropdown" disabled>Select Options</button>
+						</div>
+						<div class="col-4">
+							<button type="button" class="button" disabled>Button 1</button>
+						</div>
+						<div class="col-4">
+							<button type="button" class="button" disabled><span class="fa fa-butt-upload"></span>&nbsp;</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 inline">
+							<button type="button" class="button">Default</button>
+							<button type="button" class="button error">Error</button>
+							<button type="button" class="button warning">Warning</button>
+							<button type="button" class="button success">Success</button>
+							<button type="button" class="button notice">Notice</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-3 error">
+							<label>Error</label>
+							<button type="button" class="button">Error</button>
+						</div>
+						<div class="col-3 warning">
+							<label>Warning</label>
+							<button type="button" class="button">Warning</button>
+						</div>
+						<div class="col-3 success">
+							<label>Success</label>
+							<button type="button" class="button">Success</button>
+						</div>
+						<div class="col-3 notice">
+							<label>Notice</label>
+							<button type="button" class="button">Notice</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-3 error">
+							<label>Error</label>
+							<button type="button" class="button" disabled>Disabled</button>
+						</div>
+						<div class="col-3 warning">
+							<label>Warning</label>
+							<button type="button" class="button" disabled>Disabled</button>
+						</div>
+						<div class="col-3 success">
+							<label>Success</label>
+							<button type="button" class="button" disabled>Disabled</button>
+						</div>
+						<div class="col-3 notice">
+							<label>Notice</label>
+							<button type="button" class="button" disabled>Disabled</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+		<form class="form">
+			<div class="box">
+				<div class="box-header">
+					Checkboxes and Radios
+				</div>
+				<div class="box-item">
+					<div class="row">
+						<div class="col-6 checkbox">
+							<div><label><input type="checkbox" value="true" />Reviewed</label></div>
+							<div><label><input type="checkbox" value="true" />Reviewed</label></div>
+						</div>
+						<div class="col-6 checkbox">
+							<label><input type="checkbox" value="true" />Cow laborum est cillum pariatur. Tongue adipisicing dolor bresaola excepteur commodo, incididunt cupim nulla.</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-6 radio">
+							<div><label><input type="radio" value="true" />Reviewed</label></div>
+							<div><label><input type="radio" value="true" />Reviewed</label></div>
+						</div>
+						<div class="col-6 radio">
+							<label><input type="radio" value="true" />Cow laborum est cillum pariatur. Tongue adipisicing dolor bresaola excepteur commodo, incididunt cupim nulla.</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
 	</body>
 </html>

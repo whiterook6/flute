@@ -1,11 +1,13 @@
-$vertical_gutter: 1rem;
-$horizontal_gutter: 2rem;
-
 .rows {
+	$vertical_gutter: 1rem;
+	$horizontal_gutter: 2rem;
+
+	display: block;
 	padding: $vertical_gutter/2 $horizontal_gutter/2;
 
 	.row {
 		margin: (-$vertical_gutter/2) (-$horizontal_gutter/2);
+		display: block;
 
 		> * {
 			padding: $vertical_gutter/2 $horizontal_gutter/2;
@@ -45,3 +47,4 @@ $horizontal_gutter: 2rem;
 		.offset-11 { margin-left: 91.666%; }
 	}
 }
+
