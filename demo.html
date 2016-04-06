@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Demo Layout</title>
+
+		<link href="css/reset.css"
+			rel="stylesheet"
+			type="text/css">
+		<link href="css/flute.css"
+			rel="stylesheet"
+			type="text/css">
+		</style>
+	</head>
+
+	<body>
+		<div class="label">A simple example: one row, one column:</div>
+		<div class="rows">
+			<div class="row">
+				<div class="col-12">
+					<span>col-12</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="label">2 rows, multiple columns. No column stacking (yet!)</div>
+		<div class="rows">
+			<div class="row">
+				<div class="col-6">
+					<span>col-6</span>
+				</div>
+				<div class="col-4">
+					<span>col-4</span>
+				</div>
+				<div class="col-2">
+					<span>col-2</span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6">
+					<span>col-6</span>
+				</div>
+				<div class="col-6">
+					<span>col-6</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="label">1 row, more than 12 column parts:</div>
+		<div class="rows">
+			<div class="row">
+				<div class="col-6">
+					<span>col-6</span>
+				</div>
+				<div class="col-6">
+					<span>col-6</span>
+				</div>
+				<div class="col-6">
+					<span>col-6</span>
+				</div>
+				<div class="col-6">
+					<span>col-6</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="label">Nested rows within columns:</div>
+		<div class="rows">
+			<div class="row">
+				<div class="col-6">
+					<div class="row">
+						<div class="col-6">
+							<span>col-6</span>
+						</div>
+						<div class="col-6">
+							<span>col-6</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-6">
+					<span>col-6</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="label">Column offsets:</div>
+		<div class="rows">
+			<div class="row">
+				<div class="col-5 offset-7">
+					<span>col-5 offset-7</span>
+				</div>
+				<div class="col-6 offset-3">
+					<span>col-6 offset-3</span>
+				</div>
+				<div class="col-3">
+					<span>col-3</span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
