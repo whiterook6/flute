@@ -4,6 +4,7 @@ $yellow: #f1c40f;
 $green: #2ecc71;
 $blue: #3498db;
 $purple: #9b59b6;
+$grey: #bdc3c7;
 
 $disabled-red:    mix($red, #999);
 $disabled-orange: mix($orange, #999);
@@ -11,7 +12,38 @@ $disabled-yellow: mix($yellow, #999);
 $disabled-green:  mix($green, #999);
 $disabled-blue:   mix($blue, #999);
 $disabled-purple: mix($purple, #999);
+$disabled-grey:   mix($grey, #999);
 
+$light-red:    mix($red, #fff, 10%);
+$light-orange: mix($orange, #fff, 10%);
+$light-yellow: mix($yellow, #fff, 10%);
+$light-green:  mix($green, #fff, 10%);
+$light-blue:   mix($blue, #fff, 10%);
+$light-purple: mix($purple, #fff, 10%);
+$light-grey:   mix($grey, #fff, 10%);
 
+@mixin rounded($radius) {
+	border-radius: $radius;
 
+	> :first-child {
+		border-top-left-radius: $radius;
+		border-top-right-radius: $radius;
+	}
 
+	> :last-child {
+		border-bottom-left-radius: $radius;
+		border-bottom-right-radius: $radius;
+	}
+}
+
+@mixin box-shadow($color){
+	-webkit-box-shadow: 0px 5px 10px 0px rgba($color,0.5);
+	-moz-box-shadow: 0px 5px 10px 0px rgba($color,0.5);
+	box-shadow: 0px 5px 10px 0px rgba($color,0.5);
+}
+
+@mixin glow($color){
+	-webkit-box-shadow: 0px 0px 4px 0px $color;
+	-moz-box-shadow: 0px 0px 4px 0px $color;
+	box-shadow: 0px 0px 4px 0px $color;
+}

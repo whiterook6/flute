@@ -1,0 +1,214 @@
+.form {
+	/* Padding, Sizing */
+	button, input[type='text'], input[type='password'], select, textarea {
+		padding: 6px 12px;
+		display: block;
+		width: 100%;
+		outline: none;
+		margin: 0; // safari is introducing margin: 2px 0; to buttons.
+	}
+
+	.inline button, button.inline,
+	.inline input[type='text'], input[type='text'].inline,
+	.inline input[type='password'], input[type='password'].inline,
+	.inline select, select.inline,
+	.inline textarea, textarea .inline {
+		display: inline-block;
+		width: auto;
+	}
+
+	/* Filled items: button, input['submit']: .button */
+	.button {
+		cursor: pointer;
+		padding: 6px 12px;
+	}
+
+	/* Bordered glowy items: input[text], textarea, select: .input */
+	.input {
+		border-radius: $border-radius;
+		border: 1px solid $grey;
+		-webkit-transition: border-color ease-in-out .1s,-webkit-box-shadow ease-in-out .1s,color ease-in-out .1s;
+		-o-transition: border-color ease-in-out .1s,box-shadow ease-in-out .1s,color ease-in-out .1s;
+		transition: border-color ease-in-out .1s,box-shadow ease-in-out .1s,color ease-in-out .1s;
+
+	    &:focus {
+			@include glow($grey);
+			border-color: $grey;
+			color: #000;
+		}
+
+		&:disabled {
+			border-color: $disabled-grey;
+			background-color: #eee;
+			color: #666;
+			cursor: not-allowed;
+		}
+	}
+
+	.error .input, .input.error {
+		border-color: $red;
+		color: $red;
+
+		&:focus {
+			@include glow($red);
+			color: #000;
+		}
+
+		&:disabled {
+			border-color: $disabled-red;
+			color: $disabled-red;
+			background-color: $light-red;
+		}
+	}
+
+	.warning .input, .input.warning {
+		border-color: $yellow;
+		color: $yellow;
+
+		&:focus {
+			@include glow($yellow);
+			color: #000;
+		}
+
+		&:disabled {
+			border-color: $disabled-yellow;
+			color: $disabled-yellow;
+			background-color: $light-yellow;
+		}
+	}
+
+	.success .input, .input.success {
+		border-color: $green;
+		color: $green;
+
+		&:focus {
+			@include glow($green);
+			color: #000;
+		}
+
+		&:disabled {
+			border-color: $disabled-green;
+			color: $disabled-green;
+			background-color: $light-green;
+		}
+	}
+
+	.notice .input, .input.notice {
+		border-color: $blue; // Note that default focus color already matches, so is omitted
+		color: $blue;
+
+		&:focus {
+			color: #000;
+		}
+
+		&:disabled {
+			border-color: $disabled-blue;
+			color: $disabled-blue;
+			background-color: $light-blue;
+		}
+	}
+
+	/* Filled items: button, input['submit']: .button */
+	.button {
+		background-color: $blue;
+		border-radius: $border-radius;
+		border: 1px solid $blue;
+		color: white;
+
+		&:hover {
+			background-color: $green;
+			border-color: $green;
+			color: white;
+		}
+
+		&:disabled {
+			background-color: $disabled-blue;
+			border-color: $disabled-blue;
+			color: #eee;
+			cursor: not-allowed;
+		}
+	}
+
+	.error .button, .button.error {
+		border-color: $red;
+		background-color: $red;
+
+		&:hover {
+			background-color: white;
+			color: $red;
+		}
+
+		&:disabled {
+			background-color: $disabled-red;
+			border-color: $disabled-red;
+			color: #eee;
+		}
+	}
+
+	.warning .button, .button.warning {
+		border-color: $yellow;
+		background-color: $yellow;
+
+		&:hover {
+			background-color: white;
+			color: $yellow;
+		}
+
+		&:disabled {
+			background-color: $disabled-yellow;
+			border-color: $disabled-yellow;
+			color: #eee;
+		}
+	}
+
+	.success .button, .button.success {
+		border-color: $green;
+		background-color: $green;
+
+		&:hover {
+			background-color: white;
+			color: $green;
+		}
+
+		&:disabled {
+			background-color: $disabled-green;
+			border-color: $disabled-green;
+			color: #eee;
+		}
+	}
+
+	.notice .button, .button.notice {
+		border-color: $blue;
+		background-color: $blue;
+
+		&:hover {
+			background-color: white;
+			color: $blue;
+		}
+
+		&:disabled {
+			background-color: $disabled-blue;
+			border-color: $disabled-blue;
+			color: #eee;
+		}
+	}
+
+	// /* Select / Dropdowns: button.dropdown */
+	// .dropdown {
+	// 	background-color: $blue;
+	// 	color: white;
+	// 	border: 0;
+	// 	border-radius: $border-radius;
+
+	// 	&:hover {
+	// 		background-color: $turquoise;
+	// 	}
+
+	// 	&:disabled {
+	// 		background-color: $disabled-blue;
+	// 		border-color: $disabled-blue;
+	// 		color: #eee;
+	// 		cursor: not-allowed;
+	// 	}
+	// }
+}
