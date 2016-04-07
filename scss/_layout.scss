@@ -8,6 +8,7 @@
 	.row {
 		margin: (-$vertical_gutter/2) (-$horizontal_gutter/2);
 		display: block;
+		clear: both;
 
 		> * {
 			padding: $vertical_gutter/2 $horizontal_gutter/2;
