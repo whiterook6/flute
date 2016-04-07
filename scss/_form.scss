@@ -6,6 +6,7 @@
 		width: 100%;
 		outline: none;
 		margin: 0; // safari is introducing margin: 2px 0; to buttons.
+		resize: none;
 	}
 
 	.inline button, button.inline,
@@ -191,6 +192,11 @@
 			border-color: $disabled-blue;
 			color: #eee;
 		}
+	}
+
+	label[for]{
+		font-weight: bold;
+		font-size: small;
 	}
 
 	// /* Select / Dropdowns: button.dropdown */
