@@ -1,5 +1,9 @@
 .form {
 	/* Padding, Sizing */
+	.static { // for spans and divs that hold numbers and values like an input would
+		padding: 6px 12px;
+	}
+
 	button, input[type='text'], input[type='password'], select, textarea {
 		padding: 6px 12px;
 		display: block;
@@ -48,7 +52,6 @@
 
 	.error .input, .input.error {
 		border-color: $red;
-		color: $red;
 
 		&:focus {
 			@include glow($red);
@@ -64,7 +67,6 @@
 
 	.warning .input, .input.warning {
 		border-color: $yellow;
-		color: $yellow;
 
 		&:focus {
 			@include glow($yellow);
@@ -80,7 +82,6 @@
 
 	.success .input, .input.success {
 		border-color: $green;
-		color: $green;
 
 		&:focus {
 			@include glow($green);
@@ -96,7 +97,6 @@
 
 	.notice .input, .input.notice {
 		border-color: $blue; // Note that default focus color already matches, so is omitted
-		color: $blue;
 
 		&:focus {
 			color: #000;

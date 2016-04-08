@@ -1,3 +1,5 @@
+
+// Grid System
 .rows {
 	$vertical_gutter: 1rem;
 	$horizontal_gutter: 1rem;
@@ -49,3 +51,26 @@
 	}
 }
 
+// main containers
+@media (max-width: $small-screen-width){
+.container {
+	margin: 0 15px;
+}}
+
+@media (min-width: $small-screen-width){
+.container {
+	width: $small-screen-width - 50px;
+	margin: 0 auto;
+}}
+
+@media (min-width: $medium-screen-width){
+.container {
+	width: $medium-screen-width - 100px;
+	margin: 0 auto;
+}}
+
+@media (min-width: $large-screen-width){
+.container {
+	width:  $large-screen-width - 200px;
+	margin: 0 auto;
+}}
