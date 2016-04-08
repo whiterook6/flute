@@ -22,7 +22,7 @@
 	@include monospace;
 }
 
-h1 {
+h1, .h1 {
 	$font-size: 36px;
 	@include serif;
 	font-size: $font-size;
@@ -30,7 +30,7 @@ h1 {
 	line-height: $font-size;
 	margin: $font-size/2 1rem $font-size/4;
 }
-h2 {
+h2, .h2 {
 	$font-size: 28px;
 	@include serif;
 	font-size: $font-size;
@@ -38,7 +38,7 @@ h2 {
 	line-height: $font-size;
 	margin: $font-size/2 1rem $font-size/4;
 }
-h3 {
+h3, .h3 {
 	$font-size: 20px;
 	@include sans;
 	font-size: $font-size;
@@ -55,4 +55,13 @@ body, * {
 
 p {
 	margin-top: 7px;
+}
+
+label[for], .inline label, label.inline {
+	font-weight: bold;
+	font-size: small;
+}
+
+label[for] {
+	cursor: pointer;
 }
