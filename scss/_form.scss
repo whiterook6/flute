@@ -4,7 +4,7 @@
 		padding: 6px 12px;
 	}
 
-	button, input[type='text'], input[type='password'], select, textarea {
+	button, input[type='text'], input[type='password'], input[type='number'], select, textarea {
 		padding: 6px 12px;
 		display: block;
 		width: 100%;
@@ -15,6 +15,7 @@
 
 	.inline button, button.inline,
 	.inline input[type='text'], input[type='text'].inline,
+	.inline input[type='number'], input[type='number'].inline,
 	.inline input[type='password'], input[type='password'].inline,
 	.inline select, select.inline,
 	.inline textarea, textarea .inline {

@@ -50,25 +50,25 @@
 		.offset-11 { margin-left: 91.666%; }
 	}
 
-	@media (max-width: $xsmall-screen-width){
+	@media (max-width: $xsmall-screen-width - 1px){
 	.row.wrap-below-xs > * {
 		width: 100%;
 		margin-left: initial;
 	}}
 
-	@media (max-width: $small-screen-width){
+	@media (max-width: $small-screen-width - 1px){
 	.row.wrap-below-sm > * {
 		width: 100%;
 		margin-left: initial;
 	}}
 
-	@media (max-width: $medium-screen-width){
+	@media (max-width: $medium-screen-width - 1px){
 	.row.wrap-below-md > * {
 		width: 100%;
 		margin-left: initial;
 	}}
 
-	@media (max-width: $large-screen-width){
+	@media (max-width: $large-screen-width - 1px){
 	.row.wrap-below-lg > * {
 		width: 100%;
 		margin-left: initial;
@@ -83,7 +83,7 @@
 
 @media (min-width: $small-screen-width){
 .container {
-	width: $small-screen-width - 50px;
+	width: $small-screen-width - 30px;
 	margin: 0 auto;
 }}
 
