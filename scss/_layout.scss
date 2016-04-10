@@ -48,75 +48,31 @@
 		.offset-9 { margin-left: 75%; }
 		.offset-10 { margin-left: 83.333%; }
 		.offset-11 { margin-left: 91.666%; }
-
-		@media (max-width: $xsmall-screen-width){
-		.col-1.wrap-below-xs,
-		.col-2.wrap-below-xs,
-		.col-3.wrap-below-xs,
-		.col-4.wrap-below-xs,
-		.col-5.wrap-below-xs,
-		.col-6.wrap-below-xs,
-		.col-7.wrap-below-xs,
-		.col-8.wrap-below-xs,
-		.col-9.wrap-below-xs,
-		.col-10.wrap-below-xs,
-		.col-11.wrap-below-xs,
-		.col-12.wrap-below-xs {
-			width: 100%;
-			margin-left: initial;
-		}}
-
-		@media (max-width: $small-screen-width){
-		.col-1.wrap-below-sm,
-		.col-2.wrap-below-sm,
-		.col-3.wrap-below-sm,
-		.col-4.wrap-below-sm,
-		.col-5.wrap-below-sm,
-		.col-6.wrap-below-sm,
-		.col-7.wrap-below-sm,
-		.col-8.wrap-below-sm,
-		.col-9.wrap-below-sm,
-		.col-10.wrap-below-sm,
-		.col-11.wrap-below-sm,
-		.col-12.wrap-below-sm {
-			width: 100%;
-			margin-left: initial;
-		}}
-
-		@media (max-width: $medium-screen-width){
-		.col-1.wrap-below-md,
-		.col-2.wrap-below-md,
-		.col-3.wrap-below-md,
-		.col-4.wrap-below-md,
-		.col-5.wrap-below-md,
-		.col-6.wrap-below-md,
-		.col-7.wrap-below-md,
-		.col-8.wrap-below-md,
-		.col-9.wrap-below-md,
-		.col-10.wrap-below-md,
-		.col-11.wrap-below-md,
-		.col-12.wrap-below-md {
-			width: 100%;
-			margin-left: initial;
-		}}
-
-		@media (max-width: $large-screen-width){
-		.col-1.wrap-below-lg,
-		.col-2.wrap-below-lg,
-		.col-3.wrap-below-lg,
-		.col-4.wrap-below-lg,
-		.col-5.wrap-below-lg,
-		.col-6.wrap-below-lg,
-		.col-7.wrap-below-lg,
-		.col-8.wrap-below-lg,
-		.col-9.wrap-below-lg,
-		.col-10.wrap-below-lg,
-		.col-11.wrap-below-lg,
-		.col-12.wrap-below-lg {
-			width: 100%;
-			margin-left: initial;
-		}}
 	}
+
+	@media (max-width: $xsmall-screen-width){
+	.row.wrap-below-xs > * {
+		width: 100%;
+		margin-left: initial;
+	}}
+
+	@media (max-width: $small-screen-width){
+	.row.wrap-below-sm > * {
+		width: 100%;
+		margin-left: initial;
+	}}
+
+	@media (max-width: $medium-screen-width){
+	.row.wrap-below-md > * {
+		width: 100%;
+		margin-left: initial;
+	}}
+
+	@media (max-width: $large-screen-width){
+	.row.wrap-below-lg > * {
+		width: 100%;
+		margin-left: initial;
+	}}
 }
 
 // main containers
