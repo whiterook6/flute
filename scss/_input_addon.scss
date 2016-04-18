@@ -1,0 +1,63 @@
+.form {
+	.input-group {
+		display: flex;
+
+		> * {
+			border-radius: 0;
+			border: 1px solid $grey;
+			border-width: 1px 0px 1px 1px;
+			padding: $input-padding;
+		}
+
+		> .input-addon {
+			flex-grow: 0;
+			background-color: $light-grey;
+			border-color: $grey;
+			color: $grey;
+		}
+
+		> .input {
+			border-radius: 0;
+		}
+
+		> *:first-child {
+			border-top-left-radius: $border-radius;
+			border-bottom-left-radius: $border-radius;
+		}
+
+		.input {
+			display: initial;
+		}
+
+		> *:last-child {
+			border-top-right-radius: $border-radius;
+			border-bottom-right-radius: $border-radius;
+			border-right-width: 1px;
+			border-right-style: solid;
+		}
+	}
+
+	.notice .input-addon, .input-addon.notice {
+		background-color: $light-blue;
+		border-color: $blue;
+		color: $blue;
+	}
+
+	.success .input-addon, .input-addon.success {
+		background-color: $light-green;
+		border-color: $green;
+		color: $green;
+	}
+
+	.warning .input-addon, .input-addon.warning {
+		background-color: $light-yellow;
+		border-color: $yellow;
+		color: $yellow;
+	}
+
+	.error .input-addon, .input-addon.error {
+		background-color: $light-red;
+		border-color: $red;
+		color: $red;
+	}
+}

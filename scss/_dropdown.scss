@@ -1,0 +1,52 @@
+.form {// Dropdowns
+	.dropdown {
+		$dropdown-control-width: 2rem;
+		position: relative;
+		display: block;
+
+		input[type='text'], input[type='password'], input[type='number']{
+			padding-right: $dropdown-control-width;
+		}
+
+		.drawer {
+			display: none;
+			background-color: #fff;
+		}
+
+		&:after {
+			content: "\f078";
+			display: block;
+			font-family: FontAwesome;
+			height: 1rem;
+			line-height: 1rem;
+			position: absolute;
+			right: 3px;
+			text-align: center;
+			top: 50%;
+			transform: translateY(-50%);
+			width: $dropdown-control-width;
+		}
+
+		&.open {
+			&:after {
+				content: "\f077";
+			}
+
+			.drawer {
+				padding-top: $border-radius;
+				position: absolute;
+				margin-top: (-$border-radius);
+				border: 1px solid;
+				border-top: 0;
+				display: block;
+				right: 0;
+				left: 0;
+				border-radius: 0 0 $border-radius $border-radius;
+
+				.item {
+					padding: $input-padding;
+				}
+			}
+		}
+	}
+}
