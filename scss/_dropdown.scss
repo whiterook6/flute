@@ -32,10 +32,14 @@
 				content: "\f077";
 			}
 
+			.input, .button {
+				border-bottom-left-radius: 0;
+				border-bottom-right-radius: 0;
+				border-bottom: 0;
+			}
+
 			.drawer {
-				padding-top: $border-radius;
 				position: absolute;
-				margin-top: (-$border-radius);
 				border: 1px solid;
 				border-top: 0;
 				display: block;
@@ -48,5 +52,21 @@
 				}
 			}
 		}
+	}
+
+	.notice .drawer {
+		background-color: $light-blue;
+	}
+
+	.success .drawer {
+		background-color: $light-green;
+	}
+
+	.warning .drawer {
+		background-color: $light-yellow;
+	}
+
+	.error .drawer {
+		background-color: $light-red;
 	}
 }
