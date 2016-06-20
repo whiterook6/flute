@@ -13,6 +13,11 @@
 		resize: none;
 	}
 
+	.fieldset {
+		display: block;
+		padding: $vertical_gutter $horizontal_gutter;
+	}
+
 	.inline button, button.inline,
 	.inline input[type='text'], input[type='text'].inline,
 	.inline input[type='number'], input[type='number'].inline,
