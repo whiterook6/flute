@@ -10,7 +10,7 @@
 		}
 
 		> .input-addon {
-			flex-grow: 0;
+			flex-shrink: 0;
 			background-color: $light-grey;
 			border-color: $grey;
 			color: $grey;

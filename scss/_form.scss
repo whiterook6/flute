@@ -4,7 +4,7 @@
 		padding: $input-padding;
 	}
 
-	button, input[type='text'], input[type='password'], input[type='number'], select, textarea {
+	.button, input[type='text'], input[type='password'], input[type='number'], select, textarea {
 		padding: $input-padding;
 		display: block;
 		width: 100%;
@@ -23,7 +23,8 @@
 	.inline input[type='number'], input[type='number'].inline,
 	.inline input[type='password'], input[type='password'].inline,
 	.inline select, select.inline,
-	.inline textarea, textarea .inline {
+	.inline textarea, textarea.inline,
+	.inline .static, .static.inline {
 		display: inline-block;
 		width: auto;
 	}
@@ -32,6 +33,7 @@
 	.button {
 		cursor: pointer;
 		padding: $input-padding;
+		text-align: center;
 	}
 
 	/* Bordered glowy items: input[text], textarea, select: .input */
