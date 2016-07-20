@@ -29,6 +29,13 @@
 		width: auto;
 	}
 
+	select.input {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		background-color: white;
+	}
+
 	/* Filled items: button, input['submit']: .button */
 	.button {
 		cursor: pointer;
