@@ -1,16 +1,24 @@
-.form {// Dropdowns
+.form { // Dropdowns
 	.dropdown {
 		$dropdown-control-width: 2rem;
 		position: relative;
 		display: block;
 
-		input[type='text'], input[type='password'], input[type='number']{
+		> input[type='text'], input[type='password'], input[type='number']{
 			padding-right: $dropdown-control-width;
 		}
 
 		.drawer {
 			display: none;
 			background-color: #fff;
+		}
+
+		hr {
+			border: 0;
+			height: 0;
+			border-top: 1px solid rgba(0, 0, 0, 0.1);
+			border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+			margin: $vertical-gutter/2 (-$horizontal-gutter/2);
 		}
 
 		&:after {
@@ -25,14 +33,15 @@
 			top: 50%;
 			transform: translateY(-50%);
 			width: $dropdown-control-width;
+			color: white
 		}
 
-		&.open {
+		&.open {			
 			&:after {
 				content: "\f077";
 			}
 
-			.input, .button {
+			>.input, >.button {
 				border-bottom-left-radius: 0;
 				border-bottom-right-radius: 0;
 				border-bottom: 0;
@@ -40,33 +49,29 @@
 
 			.drawer {
 				position: absolute;
-				border: 1px solid;
+				border: 1px solid $grey;
 				border-top: 0;
 				display: block;
 				right: 0;
 				left: 0;
 				border-radius: 0 0 $border-radius $border-radius;
-
-				.item {
-					padding: $input-padding;
-				}
+				@include box-shadow($grey);
+				padding: $horizontal-gutter/2 $vertical-gutter/2;
 			}
 		}
-	}
 
-	.notice .drawer {
-		background-color: $light-blue;
-	}
+		ul {
+			margin-top: $vertical-gutter/2;
+			max-height: $drawer-max-height;
+			overflow-y: scroll;
+		}
 
-	.success .drawer {
-		background-color: $light-green;
-	}
+		li {
+			cursor: pointer;
 
-	.warning .drawer {
-		background-color: $light-yellow;
-	}
-
-	.error .drawer {
-		background-color: $light-red;
+			&:hover {
+				background-color: $light-grey;
+			}
+		}
 	}
 }

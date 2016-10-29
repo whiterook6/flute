@@ -36,13 +36,6 @@
 		background-color: white;
 	}
 
-	/* Filled items: button, input['submit']: .button */
-	.button {
-		cursor: pointer;
-		padding: $input-padding;
-		text-align: center;
-	}
-
 	/* Bordered glowy items: input[text], textarea, select: .input */
 	.input {
 		border-radius: $border-radius;
@@ -130,6 +123,9 @@
 		border-radius: $border-radius;
 		border: 1px solid $blue;
 		color: white;
+		cursor: pointer;
+		padding: $input-padding;
+		text-align: center;
 
 		&:hover {
 			background-color: $green;
