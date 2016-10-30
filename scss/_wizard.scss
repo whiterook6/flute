@@ -1,0 +1,20 @@
+wizard {
+	@include box-shadow($grey);
+	border: 1px solid $grey;
+	display: block;
+	line-height: $bar-height;
+	height: $bar-height;
+	width: 100%;
+
+	header, nav, step {
+		display: inline;
+	}
+
+	nav.controls {
+		float: right;
+	}
+
+	step {
+		
+	}
+}

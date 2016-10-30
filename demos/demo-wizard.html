@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Demo: Wizard</title>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible"
+			content="IE=edge">
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1">
+		<link href="css/reset.css" 
+			rel="stylesheet"
+			type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic"
+			rel="stylesheet"
+			type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic"
+			rel="stylesheet"
+			type="text/css">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+			rel="stylesheet"
+			type="text/css">
+		<link href="css/flute.css"
+			rel="stylesheet"
+			type="text/css">
+	</head>
+	<body>
+		<div class="container rows">
+			<div class="row">
+				<div class="col-12">
+					<wizard>
+						<header>Wizard Process</header>
+						<nav class="steps">
+							<step class="visited">Step 1</step>
+							<step class="visited">Step 2</step>
+							<step class="visited">Step 3</step>
+							<step class="current">Step 4</step>
+							<step class="unlocked">Step 5</step>
+							<step>Step 6</step>
+							<step>Step 7</step>
+							<step>Step 8</step>
+						</nav>
+						<nav class="controls">
+							<step>Previous</step>
+							<step>Next</step>
+						</nav>
+					</wizard>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

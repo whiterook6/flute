@@ -1,5 +1,5 @@
 // header and footer
-header, footer {
+body > header, body > footer {
 	background-color: $light-grey;
 	position: fixed;
 	left: 0;
@@ -7,18 +7,18 @@ header, footer {
 	line-height: 36px;
 }
 
-header {
+body > header {
 	@include box-shadow($grey);
 	border-bottom: 1px solid $grey;
 	top: 0;
 }
 
-footer {
+body > footer {
 	border-top: 1px solid $grey;
 	bottom: 0;
 }
 
-sidebar {
+body > sidebar {
 	position: fixed;
 	left: 0;
 	top: 0;
