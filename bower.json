@@ -1,0 +1,20 @@
+{
+  "name": "flute",
+  "description": "A Custom UI kit for rapid html prototyping",
+  "main": "scss/style.scss",
+  "authors": [
+    "whiterook6"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "scss"
+  ],
+  "homepage": "https://github.com/whiterook6/flute",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

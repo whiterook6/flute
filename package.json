@@ -16,8 +16,5 @@
   "bugs": {
     "url": "https://github.com/whiterook6/flute/issues"
   },
-  "homepage": "https://github.com/whiterook6/flute#readme",
-  "dependencies": {
-    "vue": "^1.0.24"
-  }
+  "homepage": "https://github.com/whiterook6/flute#readme"
 }
