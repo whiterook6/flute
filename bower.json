@@ -1,7 +1,7 @@
 {
   "name": "flute",
   "description": "A Custom UI kit for rapid html prototyping",
-  "main": "scss/style.scss",
+  "main": "css/flute.css",
   "authors": [
     "whiterook6"
   ],
