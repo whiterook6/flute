@@ -1,6 +1,5 @@
 // header and footer
 header, footer {
-	background-color: $light-grey;
 	position: fixed;
 	left: 0;
 	right: 0;
@@ -8,13 +7,10 @@ header, footer {
 }
 
 header {
-	@include box-shadow($grey);
-	border-bottom: 1px solid $grey;
 	top: 0;
 }
 
 footer {
-	border-top: 1px solid $grey;
 	bottom: 0;
 }
 
@@ -24,8 +20,6 @@ sidebar {
 	top: 0;
 	bottom: 0;
 	width: $bar-width;
-
-	background-color: $light-grey;
 }
 
 .with-header {
